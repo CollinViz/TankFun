@@ -18,6 +18,15 @@ class SceneLoad extends Phaser.Scene {
         this.load.image("orange", "images/buttons/orange.png");
         this.load.image("green", "images/buttons/green.png");
         this.load.image("sample", "images/sample.png");
+        this.load.atlas('Environment', "images/Environment/Environment.png", "images/Environment/Environment.json");
+        this.load.atlas('Structure', "images/Structure/Structure.png", "images/Structure/Structure.json");
+        this.load.atlas('Tile', "images/Tile/Tile.png", "images/Tile/Tile.json");
+         
+        this.load.atlas('Units', "images/Units/units.png", "images/Units/units.json");
+        this.load.image('TankBackGround', 'images/Tile/Tile.png')
+
+        // load the JSON file
+        this.load.tilemapTiledJSON('backgroundTile', 'images/TankBackgroound.json')
         //
         //
         //

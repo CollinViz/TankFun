@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="10" height="8" tilewidth="32" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="1">
+ <editorsettings>
+  <export target="TankBackgroound.json" format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" name="Tile" tilewidth="32" tileheight="32" tilecount="42" columns="6">
+  <image source="Tile/Tile.png" width="192" height="224"/>
+  <tile id="0" type="l1"/>
+  <tile id="37" type="37"/>
+  <tile id="38" type="38"/>
+  <tile id="39" type="39"/>
+  <tile id="40" type="40"/>
+  <tile id="41" type="41"/>
+ </tileset>
+ <layer id="1" name="Background" width="10" height="8" visible="0">
+  <data encoding="csv">
+39,29,41,4,41,41,41,41,41,4,
+42,42,42,4,42,42,42,42,42,10,
+42,42,42,10,42,42,42,42,42,41,
+42,42,42,42,42,20,42,42,21,41,
+42,20,21,42,42,42,42,20,41,41,
+42,29,42,42,29,42,29,42,41,41,
+41,41,39,41,41,39,41,41,39,41,
+39,41,39,41,41,41,39,41,39,41
+</data>
+ </layer>
+ <layer id="2" name="Level1" width="10" height="8">
+  <data encoding="csv">
+42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42
+</data>
+ </layer>
+</map>

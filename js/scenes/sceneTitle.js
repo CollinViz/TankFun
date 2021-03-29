@@ -7,10 +7,15 @@ class SceneTitle extends Phaser.Scene {
     }
     create() {
        
-        this.back = this.add.image(0, 0, "titleBack");
-        this.back.setOrigin(0, 0);
-        this.back.displayWidth = game.config.width;
-        this.back.displayHeight = game.config.height;
+        //this.back = this.add.image(0, 0, "titleBack");
+        //this.back.setOrigin(0, 0);
+        //this.back.displayWidth = game.config.width;
+        //this.back.displayHeight = game.config.height;
+        //this.add.image(0, 0, 'TankBackGround')
+        let map = this.make.tilemap({ key: 'backgroundTile' })
+        let tileset = map.addTilesetImage('Tile', 'TankBackGround')
+        map.createStaticLayer('Background', tileset)
+         
         this.aGrid = new AlignGrid({
             scene: this,
             rows: 11,

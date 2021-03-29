@@ -5,8 +5,8 @@ window.onload = function() {
     if (isMobile == -1) {
         isMobile = navigator.userAgent.indexOf("Tablet");
     }
-    var w=480;
-    var h=640;
+    var w=320 ;
+    var h= 240;
 
     if (isMobile!=-1)
     {
